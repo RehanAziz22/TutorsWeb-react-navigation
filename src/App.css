@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+  background-color: rgb(0, 153, 255);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.my-navbar{
+  z-index: 1;
+}
+
+.navLinks{
+  text-decoration: none !important;
+  color: white !important;
+  margin: 0px 10px ;
+}
+
+.toggle-btn{
+  display: none !important;
+}
+.card-img{
+  width: 100%;
+  height: 400px;
+}
+
+@media only screen and (max-width:600px) {
+  .card-img{
+    width: 100%;
+    height: 400px;
+  }
+  .linkContainer{
+    flex-direction: column !important;
+    background-color: black !important;
+    height: 100vh !important;
+    width: 68% !important;
+    position: absolute !important;
+    top: 0px !important;
+    right: 0px !important;
+    padding: 19px !important;
+    justify-content: start !important;
+    /* transition: all ease 5s !important; */
+    
+  }
+  .navLinks{
+    /* margin: 10px 0px !important; */
+    text-align: center;
+    color: #000 !important;
+  }
+  .toggle-btn{
+    display: inline-block !important;
+    color: white !important;
+  }
+  .conLeft{
+    display: none !important;
+  }
+  .conRight{
+    width: 100% !important;
+  }
+}
